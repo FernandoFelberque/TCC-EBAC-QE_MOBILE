@@ -1,4 +1,5 @@
 import { specsConf } from "./specs.conf.js"
+import { hooksConf } from './hooks.conf.js'
 export let generalConf = {
 
     maxInstances: 1,
@@ -13,7 +14,7 @@ export let generalConf = {
         timeout: 60000
     },
 
-    ...specsConf
-
+    ...specsConf,
+    ...hooksConf
 
 }
