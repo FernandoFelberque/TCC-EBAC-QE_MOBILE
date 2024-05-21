@@ -2,6 +2,7 @@
   "name": "Mobile",
   "type": "module",
   "devDependencies": {
+    "@wdio/allure-reporter": "^8.36.1",
     "@wdio/appium-service": "^8.36.0",
     "@wdio/cli": "^8.36.0",
     "@wdio/local-runner": "^8.36.0",
@@ -11,9 +12,11 @@
     "appium-uiautomator2-driver": "^3.1.0"
   },
   "scripts": {
-    "test": "wdio run ./wdio.conf.js"
+    "test": "wdio run ./config/wdio.conf.js"
   },
   "dependencies": {
+    "allure-commandline": "^2.29.0",
+    "dotenv": "^16.4.5",
     "ts-node": "^10.9.2",
     "typescript": "^5.4.5"
   }
